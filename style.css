@@ -15,6 +15,9 @@ header{
 nav{
     padding-block: 1rem;
 }
+label, .check_icon {
+    display: none;
+}
 .gen_layout{
     max-width: 1000px;
     margin: auto;
@@ -123,7 +126,7 @@ nav_items > a{
 }
 /* about code */
 .about_ads{
-    background-color: gray;
+    /* background-color: gray; */
     margin-block: 7rem;
     display: flex;
     align-items: center;
@@ -149,11 +152,12 @@ nav_items > a{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(/lap4.webp) ;
+    background-image: url(/lap1.jpeg) ;
     width: 43%;
     height: 40vh;
     position: relative;
     border-radius: 7px;
+    
 }
 .about_img_vidz > img{
     filter: blur(1px);
@@ -171,13 +175,16 @@ nav_items > a{
     align-items: center;
     /* background-color: #fff; */
     border-radius: 100%;
-    width: 60px;
-    height: 60px;
+    background-color: #e7effc;
+    /* width: 80px; */
+    /* height: 60px; */
+    
     
 }
 .about_img_vidz > span > i {
     color: #ee4f0e;
     font-size: 1.9rem;
+    border-radius: 100%;
 }
 /* features styling */
 
@@ -189,7 +196,7 @@ nav_items > a{
 }
 .features > h1{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .features_cards_wrapper{
     margin-block: 2.5rem;
@@ -338,6 +345,7 @@ nav_items > a{
 /* testimony card  */
 .testimony{
     margin-bottom: 6rem;
+    display: grid;
     
     
 }
@@ -350,6 +358,9 @@ nav_items > a{
     margin-left: 18rem;
     
     
+}
+.rec_in{
+    display: grid;
 }
 .testimony_card_wrapper{
     margin-block: 2rem;
@@ -462,13 +473,18 @@ nav_items > a{
     
 }
 .frank{
-    background-color: #f6b59a;
+    background-color: #fdeee7;
+    /* width: 85%; */
+    /* margin-right: 17rem; */
+    /* width: 800px; */
     /* height: 30vh; */
     /* margin-bottom: 1rem; */
 }
 .frank_wrapper{
-    display: flex;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
     gap: 2rem;
+    /* width: 200px; */
 }
 
 .frank_in > h5{
@@ -527,3 +543,177 @@ nav_items > a{
     font-weight: 100;
     text-transform: capitalize;
 }
+/* responsiveness code  */
+@media (min-width: 320px) and (max-width: 460px) {
+    .inner_nav {
+        width: calc(100% - 30px);
+    }
+    span{
+        /* margin-left: 4rem; */
+        
+    }
+    label{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .nav_items {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_items > a{
+        width: 100%;
+        color: #000;
+        font-size: 18px;
+        padding: 0.6rem;
+        text-align: right;
+        border-bottom: 2px solid #ee4f0e;
+    }
+    .nav_items > a:last-child{
+        margin-bottom: 1.5rem;
+    }
+    .nav_right{
+        display: none;
+        position: absolute;
+        width: 340px;
+        padding: 1.8rem;
+        top: 4.4rem;
+        right: 3px;
+        z-index: 1;
+        background-color: #e9eceb;
+        opacity: .97;
+        border-bottom: 4px solid #ee4f0e;
+    }
+    #toggle:checked + .nav_right {
+        display: block;
+        transform:  none;
+    }
+    .banner {
+        width: calc(100% - 30px);
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .banner_content, .banner_image{
+        width: 100%;
+    }
+    .laptop_details{
+        width: calc(100% - 20px);
+    }
+    .laptops_details_card{
+        overflow-x: scroll;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .about_ads{
+        width: calc(100% - 30px);
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about_content{
+        width: 100%;
+
+    }
+    .about_img_vidz{
+        width: 90%;
+        margin: auto;
+
+    }
+    .about_img_vidz > img{
+        margin-left: -1.5rem;
+    }
+    .features{
+        width: calc(100% - 30px);
+    }
+    .features_cards_wrapper{
+        width: 400px;
+        margin: auto;
+        flex-direction: column;
+        
+
+        
+    }
+    .feature_card{
+        width: 100%;
+    }
+    .gallery_in{
+        width: calc(100% - 30px);
+    }
+    .gallery_out{
+        width: 100%;
+    }
+    .ann_in{
+        
+        overflow-x: scroll;
+        gap: 1rem;
+        padding: 1rem;
+        
+
+
+        
+    }
+    .ann_out{
+        width: 100%;
+        
+ 
+    }
+    
+    .testimony{
+        width: calc(100% - 30px);
+        /* grid-template-columns: 1fr 1fr; */
+        
+
+    }
+    .testimony > h2{
+        width: 100%;
+        margin-left: 6rem;
+    }
+    .testimony_card_wrapper{
+        margin: auto;
+        flex-direction: column;
+        
+
+    }
+    .testimon_wrappers{
+        flex-direction: column;
+    }
+    .testimony_card{
+        width: 100%;
+    }
+    .testimony_second > input{
+        width: 50%;
+    }
+    .testimony_second > label{
+        padding: .1rem 1rem;
+        width: 40%;
+
+    }
+    .frank{
+        width: calc(100% - 30px);
+    }
+    .frank_wrapper{
+        /* width: 400px; */
+        margin: auto;
+        /* flex-direction: column; */
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .frank_in > input{
+        margin: auto;
+        margin-left: -12rem;
+        width: 100%;
+    }
+    .frank_in > label{
+        margin: auto;
+        margin-left: -12rem;
+        width:100%;
+
+    }
+    
+    
+
+
+}  
+
+
+
