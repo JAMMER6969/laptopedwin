@@ -131,6 +131,7 @@ nav_items > a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: purple;
     /* margin-left: 4rem; */
 }
 .about_content > h5{
@@ -187,6 +188,9 @@ nav_items > a{
     border-radius: 100%;
 }
 /* features styling */
+.features{
+    background-color: gray;
+}
 
 .features > h5{
     color: red;
@@ -199,6 +203,7 @@ nav_items > a{
     font-size: 1.5rem;
 }
 .features_cards_wrapper{
+    /* background-color: red; */
     margin-block: 2.5rem;
     display: flex;
     /* grid-column: 1fr 1fr; */
@@ -276,6 +281,8 @@ nav_items > a{
     /* display: flex; */
     align-items: center;
     justify-content: space-between;
+    background-color: lightblue;
+    /* margin-top: 1rem; */
 
 }
 .gallery_out > h5{
@@ -310,6 +317,7 @@ nav_items > a{
     margin-block: 2rem;
     display: flex;
     gap: 1.8rem;
+    background-color: lightblue;
     
 
 }
@@ -318,6 +326,7 @@ nav_items > a{
     height: 17vh;
     /* border: 2px solid red; */
     border-radius: 7px;
+    background-color: black;
     
 }
 .ann_out > img{
@@ -344,8 +353,9 @@ nav_items > a{
 }
 /* testimony card  */
 .testimony{
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
     display: grid;
+    /* background-color: #e7effc; */
     
     
 }
@@ -361,6 +371,7 @@ nav_items > a{
 }
 .rec_in{
     display: grid;
+    background-color: #e7effc;
 }
 .testimony_card_wrapper{
     margin-block: 2rem;
@@ -368,6 +379,7 @@ nav_items > a{
     /* grid-column: 1fr 1fr; */
     gap: 5rem;
     /* margin-left: 4rem; */
+    /* background-color: red; */
 
 }
 .testimony_card{
